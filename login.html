@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Login Page</title>
+
+<div class="navbar">
+  <div class="logo">
+    <img src="logo.png" width="90px">
+  </div>
+<nav>
+  <ul id="MenuItems">
+    <li><a href="index.html">Home</a></li>
+    <li <link ><a href="products.html">Products</a></li>
+    <li><a href="register.html">Sign Up</a></li>
+    <li><a href="login.html">Sign In</a></li>
+    <li><a href="">Contacts</a></li>
+</ul>
+</nav>
+<img src="cart.png" width="30px" height="30px">
+<img src="menu.png" class="menu-icon" onclick="menutoggle( )">
+</div>
+  <style>
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+.loginn {
+      max-width: 400px;
+      margin : 0 auto;
+      background-color: #fff;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+    }
+    h2 {
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .form-group button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      
+    }
+    .forgot{
+      color: skyblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="loginn">
+    <h2>Login</h2>
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Login</button>
+      </div>
+    </form>
+   <p> Don't have an account?
+<a href="register.html"class="btn">Sign Up &#8594;</a>
+<a href="" class="forgot"> <br> Forgot password?</br> </a>
+   </p>
+  </div>
+
+
+
+</body>
+<!----footer--->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      
+            <div class="footer-col-2">
+        <img src="logo.png">
+        <p>Don't pray things to be easier for you, pray that you become better.</p>
+      </div>
+      
+      
+    </div>
+    <hr>
+    <p class="copyright">Copyright 2022 - JUKANEHUB</p>
+  </div>
+  
+</div>
+
+<script>
+var MenuItems = document.getElementById("MenuItems");
+
+MenuItems.style.maxHeight = "0px";
+
+  function menutoggle(){
+  if (MenuItems.style.maxHeight == "0px") 
+    {
+      MenuItems.style.maxHeight = "200px";
+    }
+  else
+  {
+      MenuItems.style.maxHeight = "0px";
+    }
+}
+</script>
+
+
+</html>
